@@ -1,0 +1,10 @@
+name : run Hello script
+on : [push]
+jobs:
+      build:
+            runs-on: ubuntu-latest
+            steps:
+                  -uses : actions/checkout@v2
+                  -name : run python script
+                  -run : python hello.py
+                  
